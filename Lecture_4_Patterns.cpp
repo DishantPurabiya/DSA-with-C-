@@ -2,18 +2,50 @@
 using namespace std;
 int main()
 {
+    // 1. Print Pattern 
+    // 1234
+    // 1234
+    // 1234
+    // 1234
     int n;
-    char Letters;
-    cout << "Enter Number: ";
+    cout << "Enter the number of rows and columns: ";
     cin >> n;
-    Letters = '*';
-    for (int i = 0; i <= n - 1; i++)
+    // for (int i = 1; i <= n; i ++)
+    // {
+    //     for (int j = 1; j <= n; j++)
+    //     {
+    //         cout << j << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // 2. Print Pattern
+    // ****
+    // ****
+    // ****
+    // ****
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int j = 1; j <= n; j++)
+    //     {
+    //         cout << "* ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // 3. Print Pattern
+    // ABCD
+    // ABCD
+    // ABCD
+    // ABCD
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 0; j <= i + 1; j++)
+        for (int j = 1; j <= n; j++)
         {
-            cout << "*";
+            char ch = 'A' + j - 1;
+            cout << ch << " ";
         }
-        cout << "\n";
+        cout << endl;
     }
     return 0;
 }
